@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.5.2  Built on : Sep 06, 2010 (09:42:01 CEST) -->
+<serviceGroup>
+    <service name="Anotaciones">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-only" class="es.aytos.main.server.AnotacionesMessageReceiverInOnly"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="es.aytos.main.server.AnotacionesMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">es.aytos.main.server.AnotacionesSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="leerAnotaciones" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://main.aytos.es">
+            <actionMapping>urn:leerAnotaciones</actionMapping>
+            <outputActionMapping>urn:leerAnotacionesResponse</outputActionMapping>
+        </operation>
+        <operation name="almacenarFicheroDeTextoEnElServidor" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://main.aytos.es">
+            <actionMapping>urn:almacenarFicheroDeTextoEnElServidor</actionMapping>
+        </operation>
+    </service>
+</serviceGroup>
